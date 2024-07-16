@@ -4,7 +4,7 @@
 **Objective**: Implement multiple conditions using if-elif-else statements.
 '''
 
-#1. Define an integer variable named `score` and assign it a value between 0 and 100.
+# 1. Define an integer variable named `score` and assign it a value between 0 and 100.
 score = int(-99)
 
 # 2. Use an if-elif-else statement to print the grade based on the following criteria:
@@ -27,5 +27,5 @@ def compro_grader(score):
 	else:
 		print("Invalid score")
 
-#3. Test the function with different scores to show the result from A to F.
+# 3. Test the function with different scores to show the result from A to F.
 compro_grader(score)
