@@ -13,7 +13,7 @@ children = [
     {"name": "Eve", "age": 6, "height": 99}
 ]
 
-# 2. Use a lambda function named criteria to define the eligibility criteria. `criteria` is a lambda function that takes a dictionary `child` and returns `True` if the child's age is greater than 3 and height is greater than 100 cm.
+# 2. Use a l    ion named criteria to define the eligibility criteria. `criteria` is a lambda function that takes a dictionary `child` and returns `True` if the child's age is greater than 3 and height is greater than 100 cm.
 criteria = lambda child: child['age'] > 3 and child['height'] > 100
 eligible_children = list(filter(criteria, children))
 

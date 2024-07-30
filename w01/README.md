@@ -1,3 +1,6 @@
+**Topic**:
+Basic Python 101
+
 Submission:
 1) Take a screenshot of your sourcecode to Word and upload as one pdf file.
 2) Raise your hand to ask the TA to check the result
