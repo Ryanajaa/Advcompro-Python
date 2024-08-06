@@ -1,13 +1,21 @@
 '''
-**Assignment 9: Using Continue in a Loop**
-**Topic**: Loops Flow Control
-**Objective**: Understand how to use the continue statement to skip iterations in a loop.
+Assignment 9: List Slicing
+Objective: Learn how to slice lists to access sublists.
 '''
 
-# 1. Use a for loop to iterate over the numbers from 1 to 10 using range function.
-for i in range(1, 11):
-# 2. Apply a continue statement to skip the number 5.
-	if i == 5:
-		continue
-	print(i)
-# 3. Print number of each loop
+#1.	Create a list named letters containing the first 10 letters of the alphabet. Ex. [A, B, C, D, ... ]
+letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+
+#2.	Slice the list to get the first 5 letters and print the result.
+
+#	first_five = letters[slice(5)] or
+first_five = letters[0:5]
+print(first_five)
+
+#3.	Slice the list to get the last 5 letters and print the result.
+last_five = letters[-5:]
+print(last_five)
+
+#4.	Reverse the list and print the result.
+letters.sort(reverse=True)
+print(letters)

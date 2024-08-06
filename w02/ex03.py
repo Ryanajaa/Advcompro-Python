@@ -1,16 +1,22 @@
 '''
-**Assignment 3: Short-Hand If-Else Statement**
-**Topic**: Short-Hand If-Else
-**Objective**: Use short-hand if-else statements for compact code.
+Assignment 3: List append() Method
+Objective: Understand how to add elements to a list using append().
 '''
 
-# 1. Define a variable `age` and assign it the value 18.
-age = int(18)
+#1.	Create an empty list named colors.
+colors = list()
 
-# 2. Define a variable `status` and use a short-hand if-else statement to assign the value "Adult" if a person's age is 18 or above, and "Minor" if below 18 in one line.
-status = "Adult" if age >= 18 else "Minor"
+#2.	Use the append() method to add “red”, “green”, and “blue” to the list.
+colors.append("red")
+colors.append("green")
+colors.append("blue")
 
-# 3. Print the result.
-print(status)
+#3.	Print the list.
+print(colors)
 
-# 4. The number line of code should limit to 3 lines only.
+#4.	Append “yellow” and “purple” to the list
+colors.append("yellow")
+colors.append("purple")
+
+#5.	Print the length of the list.
+print(len(colors))

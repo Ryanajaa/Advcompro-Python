@@ -1,179 +1,116 @@
-**Topic**:
-1) Git repository
-2) Module and Package
-3) Real-world problem in dictionary and list comprehension
-
-
-**Submission**:  
 1) Take a screenshot of your sourcecode to Word and upload as one pdf file.
 2) Raise your hand to ask the TA to check the result
 
+**Assignment 1: Basic If-Else Statement** 
+**Topic**: If-Else
+**Objective**: Understand basic if-else statements in Python.
+1. Define an integer variable named `number` and assign it a value.
+2. Use an if-else statement to check if the number is even or odd.
+3. Print "Even" if the number is even, otherwise print "Odd".
 
-**Assignment 1**
-**Creating and Initializing a Git Repository on GitHub**
-Create and initialize a Git repository on GitHub to track changes in your project.
-**Instructions:**
-1. Create a new repository on GitHub named `python_assignment_week04`.
-2. Clone the repository to your local machine.
-3. In the local repository, create a `README.md` file with a brief description of the project.
-4. Commit the `README.md` file to the repository.
-5. Push the commit to the remote repository on GitHub.
-Submission:
-- Put the URL of GitHub into the submission pdf file.
+**Assignment 2: If-Elif-Else Statement**
+**Topic**: If-Else
+**Objective**: Implement multiple conditions using if-elif-else statements.
+1. Define an integer variable named `score` and assign it a value between 0 and 100.
+2. Use an if-elif-else statement to print the grade based on the following criteria:
+    - 90-100: "A"
+    - 80-89: "B"
+    - 70-79: "C"
+    - 60-69: "D"
+    - Below 60: "F"
+3. Test the function with different scores to show the result from A to F.
 
-
-**Assignment 2**
-Creating a New Branch and Committing Changes
-Create a new branch in your Git repository and commit changes to that branch.
-**Instructions:**
-1. In your local repository, create a new branch named `feature`.
-2. Switch to the `feature` branch.
-3. Create a file named `main.py` and add some sample Python code such as print("hello world") to it.
-4. Commit the `main.py` file to the `feature` branch.
-5. Push the `feature` branch to the remote repository on GitHub.
-Submission:
-- Put the URL of GitHub into the submission pdf file.
-
-
-**Assignment 3: Merging Branches in Git**
-Merge changes from the `feature` branch into the `main` branch in your Git repository.
-**Instructions:**
-1. Switch to the `main` branch in your local repository.
-2. Merge the `feature` branch into the `main` branch.
-3. Push the merged changes to the remote repository on GitHub.
-Submission:
-- Put the URL of GitHub into the submission pdf file.
+**Assignment 3: Short-Hand If-Else Statement**
+**Topic**: Short-Hand If-Else
+**Objective**: Use short-hand if-else statements for compact code.
+1. Define a variable `age` and assign it the value 18.
+2. Define a variable `status` and use a short-hand if-else statement to assign the value "Adult" if a person's age is 18 or above, and "Minor" if below 18 in one line.
+3. Print the result.
+4. The number line of code should limit to 3 lines only.
 
 
-**Assignment 4: Defining Functions in Python**
-Define and use functions in Python to perform specific tasks.
-**Instructions:**
-1. Create a new Python file named `calculator.py`.
-2. Define a function named `add` that takes two arguments and returns their sum.
-3. Define a function named `subtract` that takes two arguments and returns their difference.
-4. Define a function named `multiply` that takes two arguments and returns their product.
-5. Define a function named `divide` that takes two arguments and returns their quotient.
-6. Write a main block that calls each function with sample inputs and prints the results.
+**Assignment 4: Short-Hand If-Else with List Elements**
+**Topic**: Short-Hand If-Else
+**Objective**: Use short-hand if-else statements to modify list elements.
+1. Create a list named `numbers` containing a integers from 1 to 5.
+2. Use a list comprehension with a short-hand if-else statement to create a new list named `modified_numbers` where each element is increased by 10 if it is even, or decreased by 1 if it is odd.
+3. Print the `modified_numbers` list.
+4. The number line of code should limit to 3 lines only.
+ex. numbers = [1, 2, 3, 4, 5]
+modified_numbers will be [0, 12, 2, 14, 4]
 
+**Assignment 5: For Loop with a List**
+**Topic**: For Loops
+**Objective**: Iterate over elements in a list using a for loop.
+1. Create a list named `fruits` containing "apple", "banana", "cherry".
+2. Use a for loop to iterate over the list and print each fruit.
 
-**Assignment 5: Using Lambda Functions in Python**
-Rewrite the functions from Assignment 4 using lambda functions.
-**Instructions:**
-1. Create a new Python file named `lambda_calculator.py`.
-2. Define a lambda function for addition that takes two arguments and returns their sum.
-3. Define a lambda function for subtraction that takes two arguments and returns their difference.
-4. Define a lambda function for multiplication that takes two arguments and returns their product.
-5. Define a lambda function for division that takes two arguments and returns their quotient.
-6. Write a main block that calls each lambda function with sample inputs and prints the results.
+**Assignment 6: For Loop with a Range**
+**Topic**: For Loops
+**Objective**: Use a for loop with a range to iterate over a sequence of numbers.
+1. Use a for loop to iterate over the numbers from 1 to 10.
+2. Print the square of each number.
 
+**Assignment 7: Basic While Loop**
+**Topic**: While Loops
+**Objective**: Understand basic while loops in Python.
+1. Use a while loop to print the numbers from 1 to 5.
 
-**Assignment 6: Importing Modules in Python**
-Import and use modules in Python to enhance functionality.
-Instructions:
-1. Create a new Python file named `string_operations.py`.
-2. Define functions for common string operations:
-    - `reverse_string`: Reverses a given string.
-    - `capitalize_string`: Capitalizes the first letter of a given string.
-    - `lowercase_string`: Converts all characters in a given string to lowercase.
-    - `uppercase_string`: Converts all characters in a given string to uppercase.
-3. Create another Python file named `main.py`.
-4. Import the `string_operations` module in `main.py`.
-5. Use the imported functions to perform operations on sample strings and print the results.
-Example of main.py
-```python
-# Importing the string_operations module
-import string_operations as so
+**Assignment 8: Using Break in a Loop**
+**Topic**: Loops Flow Control
+**Objective**: Understand how to use the break statement to exit a loop early.
+1. Use a for loop to iterate over the numbers from 1 to 10 using range function.
+2. Use a break statement to exit the loop when the number is 5.
+3. Print the numbers iterated before the break.
 
-# Sample strings and printing results
-sample_string = "hello World"
+**Assignment 9: Using Continue in a Loop**
+**Topic**: Loops Flow Control
+**Objective**: Understand how to use the continue statement to skip iterations in a loop.
+1. Use a for loop to iterate over the numbers from 1 to 10 using range function.
+2. Apply a continue statement to skip the number 5.
+3. Print number of each loop
 
-print("Original:", sample_string)
-print("Reversed:", so.reverse_string(sample_string))
-print("Capitalized:", so.capitalize_string(sample_string))
-print("Lowercase:", so.lowercase_string(sample_string))
-print("Uppercase:", so.uppercase_string(sample_string))
-```
+**Assignment 10: Looping Through a Dictionary**
+**Topic**: Loops Dictionary
+**Objective**: Iterate over keys and values in a dictionary using a for loop.
+1. Create a dictionary named `inventory` with keys as item names and values as their quantities.
+2. Use a for loop to iterate over the dictionary and print each key and value pair.
 
-Assignment 7: Creating Packages in Python
-Organize your code into packages to improve modularity and reusability. Use the knowledge from Assignments 4 and 6.
-**Instructions:**
-1. Create a directory named `utilities`.
-2. Inside `utilities`, create an `__init__.py` file.
-3. Create a module named `calculator.py` inside `utilities` and include the functions defined in Assignment 4.
-5. Create a module named `string_operations.py` inside `utilities` and include the functions defined in Assignment 6.
-6. Create another Python file named `main.py` outside the `utilities` directory.
-7. Import functions from all three modules (`calculator` and `string_operations`) in `main.py`.
-8. Use the imported functions to perform operations and print the results.
-Example of main.py
-```python
-# Importing modules from the utilities package
-from utilities.calculator import add as add_def, subtract as subtract_def, multiply as multiply_def, divide as divide_def
-from utilities.string_operations import reverse_string, capitalize_string, lowercase_string, uppercase_string
+**Homework 1: For Loop with a Specified Range**
+**Objective**: Use the range function in a for loop to iterate over a sequence of numbers.
+1. Use a for loop with `range` to iterate over the numbers from 0 to 20, stepping by 2.
+2. Print each number.
 
-# Sample inputs and printing results using calculator.py
-print("Using calculator.py:")
-print("Addition:", add_def(10, 5))
-print("Subtraction:", subtract_def(10, 5))
-print("Multiplication:", multiply_def(10, 5))
-print("Division:", divide_def(10, 5))
+**Homework 2: Lists of Dictionaries in Python**
+**Objective**: To practice creating, manipulating, and analyzing lists of dictionaries in Python. This assignment will help you understand how to work with complex data structures and apply various Python techniques.
+1. Create a list named students that contains dictionaries. Each dictionary should represent a student with the following keys: name, age, grade, and major.
+    Example:
+    students = [
+  	  {"name": "Alice", "age": 20, "grade": 85, "major": "Physics"},
+  	  {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
+  	  {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
+  	  {"name": "Diana", "age": 21, "grade": 92, "major": "Biology"}
+    ]
+2. Using a for loop to update Alice's grade to 87. Iterate over the list and update the grade for the student named Alice.
+3. Using a for loop to update Diana's major to "Programming". Iterate over the list and update the major for the student named Diana.
+4. Print the updated list of students. After making the updates, use a for loop to print each dictionary in the list to verify the changes.
+    Expected output:
+    students = [
+  	  {"name": "Alice", "age": 20, "grade": 87, "major": "Physics"},
+  	  {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
+  	  {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
+  	  {"name": "Diana", "age": 21, "grade": 92, "major": "Programming"}
+    ]
 
-# Sample strings and printing results using string_operations.py
-sample_string = "hello World"
-print("\nUsing string_operations.py:")
-print("Original:", sample_string)
-print("Reversed:", reverse_string(sample_string))
-print("Capitalized:", capitalize_string(sample_string))
-print("Lowercase:", lowercase_string(sample_string))
-print("Uppercase:", uppercase_string(sample_string))
+**Homework 3:  Adding Dictionary Items in a List of Dictionaries**
+Objective: Practice adding items in dictionaries within a list.
+1. Using data from the homework 2.
+2. Add a new key "graduation_year" with a value to each student's dictionary. Assume all students are expected to graduate in 2024.
+3. Remove the key "age" from each student's dictionary.
+4. Print the updated list of students.
+    Expected Output:
+    {'name': 'Alice', 'grade': 85, 'major': 'Physics', 'graduation_year': 2024}
+    {'name': 'Bob', 'grade': 90, 'major': 'Chemistry', 'graduation_year': 2024}
+    {'name': 'Charlie', 'grade': 78, 'major': 'Mathematics', 'graduation_year': 2024}
+    {'name': 'Diana', 'grade': 92, 'major': 'Biology', 'graduation_year': 2024}
 
-```
-
-Expected output:
-Using calculator.py:
-Addition: 15
-Subtraction: 5
-Multiplication: 50
-Division: 2.0
-
-Using string_operations.py:
-Original: hello World
-Reversed: dlroW olleh
-Capitalized: Hello world
-Lowercase: hello world
-Uppercase: HELLO WORLD
-
-
-**Assignment 8: Filtering and Modifying a List of Student Grades**
-Imagine you have a list of student grades and you need to create a list of students who have passed (with grades 60 and above) and give a 5% bonus to those grades.
-**Instruction**:
-1. Define a list of integers named `grades` containing student grades.
-   grades = [55, 70, 65, 40, 90, 85, 50, 77]
-2. Use a list comprehension to create a new list named `passed_with_bonus` that:
-    - Filters the grades to include only those that are 60 and above.
-    - Applies a 5% bonus to each of the filtered grades.
-3. Print the `passed_with_bonus` list to display the modified grades.
-Expected Output:
-Grades after filtering and applying bonus: [73.5, 68.25, 94.5, 89.25, 80.85]
-
-
-**Assignment 9: Filtering Eligible Children for a Fun Park**
-Imagine you have a list of dictionaries where each dictionary contains a child's name, age, and height. You need to create a new list of children who are eligible to join a fun park. A child is eligible if their age is greater than 3 and their height is greater than 100 cm.
-**Instructions:**
-1. Define a list of dictionaries named `children`, where each dictionary contains a `name`, `age`, and `height`.
-   children = [ {"name": "Alice", "age": 2, "height": 95}, {"name": "Bob", "age": 4, "height": 105}, {"name": "Charlie", "age": 3, "height": 110}, {"name": "David", "age": 5, "height": 102}, {"name": "Eve", "age": 6, "height": 99} ]
-2. Use a list comprehension to create a new list named `eligible_children` that:
-    - Filters the children to include only those with age greater than 3 and height greater than 100 cm.
-3. Print the `eligible_children` list to display the names, ages, and heights of the eligible children.
-**Expected Output:**
-Eligible children for the fun park: [{'name': 'Bob', 'age': 4, 'height': 105}, {'name': 'David', 'age': 5, 'height': 102}]
-
-
-**Assignment 10: Filtering Eligible Children for a Fun Park (Using Lambda Function)**
-Student can incorporate a lambda function into the list comprehension for filtering eligible children.
-**Instructions:**
-1. Define a list of dictionaries named `children`, where each dictionary contains a `name`, `age`, and `height`.
-   children = [ {"name": "Alice", "age": 2, "height": 95}, {"name": "Bob", "age": 4, "height": 105}, {"name": "Charlie", "age": 3, "height": 110}, {"name": "David", "age": 5, "height": 102}, {"name": "Eve", "age": 6, "height": 99} ]
-2. Use a lambda function named criteria to define the eligibility criteria. `criteria` is a lambda function that takes a dictionary `child` and returns `True` if the child's age is greater than 3 and height is greater than 100 cm.
-3. Print the `eligible_children` list to display the names, ages, and heights of the eligible children.
-**Expected Output:**
-Eligible children for the fun park: [{'name': 'Bob', 'age': 4, 'height': 105}, {'name': 'David', 'age': 5, 'height': 102}]

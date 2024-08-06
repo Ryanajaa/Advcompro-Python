@@ -1,21 +1,27 @@
 '''
-**Assignment 1: Basic If-Else Statement** 
-**Topic**: If-Else
-**Objective**: Understand basic if-else statements in Python.
+Assignment 1: Variable Types
+Objective: Understand and utilize different variable types in Python.
 '''
 
-# 1. Define an integer variable named `number` and assign it a value.
-number = int(66011009)
+#1.	Define an integer variable named age and set it to 25.
+age = int(25)
 
-# 2. Use an if-else statement to check if the number is even or odd.
-# 3. Print "Even" if the number is even, otherwise print "Odd".
+#2.	Define a float variable named height and set it to 5.9.
+height = float(5.9)
 
-print("Even") if number % 2 == 0 else print("Odd")
+#3.	Define a string variable named name and set it to your name.
+name = str("Jitpanu")
 
-# or more understand version
+#4.	Define a boolean variable named is_student and set it to True.
+is_student = bool(True)
+
+#5.	Print all the variables.
+print(age, height, name, is_student)
+
+#If you want to print/find out type of variables
 '''
-if number % 2 == 0:
-	print("Even")
-else:
-	print("Odd")
+print(type(age))
+print(type(height))
+print(type(name))
+print(type(is_student))
 '''

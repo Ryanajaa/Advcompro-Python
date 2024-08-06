@@ -1,116 +1,91 @@
+**Topic**:
+Basic Python 101
+
+Submission:
 1) Take a screenshot of your sourcecode to Word and upload as one pdf file.
 2) Raise your hand to ask the TA to check the result
 
-**Assignment 1: Basic If-Else Statement** 
-**Topic**: If-Else
-**Objective**: Understand basic if-else statements in Python.
-1. Define an integer variable named `number` and assign it a value.
-2. Use an if-else statement to check if the number is even or odd.
-3. Print "Even" if the number is even, otherwise print "Odd".
+Assignment 1: Variable Types
+Objective: Understand and utilize different variable types in Python.
 
-**Assignment 2: If-Elif-Else Statement**
-**Topic**: If-Else
-**Objective**: Implement multiple conditions using if-elif-else statements.
-1. Define an integer variable named `score` and assign it a value between 0 and 100.
-2. Use an if-elif-else statement to print the grade based on the following criteria:
-    - 90-100: "A"
-    - 80-89: "B"
-    - 70-79: "C"
-    - 60-69: "D"
-    - Below 60: "F"
-3. Test the function with different scores to show the result from A to F.
+    1.    Define an integer variable named age and set it to 25.
+    2.    Define a float variable named height and set it to 5.9.
+    3.    Define a string variable named name and set it to your name.
+    4.    Define a boolean variable named is_student and set it to True.
+    5.    Print all the variables.
 
-**Assignment 3: Short-Hand If-Else Statement**
-**Topic**: Short-Hand If-Else
-**Objective**: Use short-hand if-else statements for compact code.
-1. Define a variable `age` and assign it the value 18.
-2. Define a variable `status` and use a short-hand if-else statement to assign the value "Adult" if a person's age is 18 or above, and "Minor" if below 18 in one line.
-3. Print the result.
-4. The number line of code should limit to 3 lines only.
+Assignment 2: String Manipulation
+Objective: Learn various string operations and methods.
+    1.    Create a string variable named sentence with the value “Python programming is fun”.
+    2.    Convert the string to uppercase and print it.
+    3.    Replace the word “fun” with “awesome” and print the new sentence.
+    4.    Split the sentence into a list of words and print it.
 
+Assignment 3: List append() Method
+Objective: Understand how to add elements to a list using append().
 
-**Assignment 4: Short-Hand If-Else with List Elements**
-**Topic**: Short-Hand If-Else
-**Objective**: Use short-hand if-else statements to modify list elements.
-1. Create a list named `numbers` containing a integers from 1 to 5.
-2. Use a list comprehension with a short-hand if-else statement to create a new list named `modified_numbers` where each element is increased by 10 if it is even, or decreased by 1 if it is odd.
-3. Print the `modified_numbers` list.
-4. The number line of code should limit to 3 lines only.
-ex. numbers = [1, 2, 3, 4, 5]
-modified_numbers will be [0, 12, 2, 14, 4]
+    1.    Create an empty list named colors.
+    2.    Use the append() method to add “red”, “green”, and “blue” to the list.
+    3.    Print the list.
+    4.    Append “yellow” and “purple” to the list.
+    5.    Print the length of the list.
 
-**Assignment 5: For Loop with a List**
-**Topic**: For Loops
-**Objective**: Iterate over elements in a list using a for loop.
-1. Create a list named `fruits` containing "apple", "banana", "cherry".
-2. Use a for loop to iterate over the list and print each fruit.
+Assignment 4: List remove() Method
+Objective: Learn how to remove specific elements from a list using remove().
 
-**Assignment 6: For Loop with a Range**
-**Topic**: For Loops
-**Objective**: Use a for loop with a range to iterate over a sequence of numbers.
-1. Use a for loop to iterate over the numbers from 1 to 10.
-2. Print the square of each number.
+    1.    Create a list named animals containing “cat”, “dog”, “rabbit”, “bird”, “fish”.
+    2.    Use the remove() method to remove “rabbit” from the list.
+    3.    Print the list.
 
-**Assignment 7: Basic While Loop**
-**Topic**: While Loops
-**Objective**: Understand basic while loops in Python.
-1. Use a while loop to print the numbers from 1 to 5.
+Assignment 5: List insert() Method
+Objective: Learn how to insert elements at specific positions in a list using insert().
 
-**Assignment 8: Using Break in a Loop**
-**Topic**: Loops Flow Control
-**Objective**: Understand how to use the break statement to exit a loop early.
-1. Use a for loop to iterate over the numbers from 1 to 10 using range function.
-2. Use a break statement to exit the loop when the number is 5.
-3. Print the numbers iterated before the break.
+    1.    Create a list named numbers containing the integers 1, 2, 4, 5, 6.
+    2.    Use the insert() method to add the number 3 between 2 and 4.
+    3.    Print the list.
+    4.    Insert the number 0 at the beginning of the list.
+    5.    Print the final list of numbers.
 
-**Assignment 9: Using Continue in a Loop**
-**Topic**: Loops Flow Control
-**Objective**: Understand how to use the continue statement to skip iterations in a loop.
-1. Use a for loop to iterate over the numbers from 1 to 10 using range function.
-2. Apply a continue statement to skip the number 5.
-3. Print number of each loop
+Assignment 6: List pop() Method
+Objective: Understand how to remove elements from a list using pop() and how to use the removed elements.
+    1.    Create a list named cities containing “New York”, “Los Angeles”, “Chicago”, “Houston”, “Phoenix”.
+    2.    Use the pop() method to remove the last element from the list and store it in a variable.
+    3.    Print the variable holding the removed element.
+    4.    Use pop() to remove the first element from the list.
+    5.    Print the final list of cities.
 
-**Assignment 10: Looping Through a Dictionary**
-**Topic**: Loops Dictionary
-**Objective**: Iterate over keys and values in a dictionary using a for loop.
-1. Create a dictionary named `inventory` with keys as item names and values as their quantities.
-2. Use a for loop to iterate over the dictionary and print each key and value pair.
+Assignment 7: List sort() Method
+Objective: Learn how to sort elements in a list using sort().
 
-**Homework 1: For Loop with a Specified Range**
-**Objective**: Use the range function in a for loop to iterate over a sequence of numbers.
-1. Use a for loop with `range` to iterate over the numbers from 0 to 20, stepping by 2.
-2. Print each number.
+    1.    Create a list named scores containing the following numbers: 88, 92, 75, 89, 78.
+    2.    Use the sort() method to sort the list in ascending order.
+    3.    Print the sorted list.
+    4.    Sort the list in descending order and print it.
+    5.    Create a list of strings named names containing “Alice”, “Bob”, “Charlie”, “David”, “Eve” and sort it in alphabetical order.
 
-**Homework 2: Lists of Dictionaries in Python**
-**Objective**: To practice creating, manipulating, and analyzing lists of dictionaries in Python. This assignment will help you understand how to work with complex data structures and apply various Python techniques.
-1. Create a list named students that contains dictionaries. Each dictionary should represent a student with the following keys: name, age, grade, and major.
-    Example:
-    students = [
-  	  {"name": "Alice", "age": 20, "grade": 85, "major": "Physics"},
-  	  {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
-  	  {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
-  	  {"name": "Diana", "age": 21, "grade": 92, "major": "Biology"}
-    ]
-2. Using a for loop to update Alice's grade to 87. Iterate over the list and update the grade for the student named Alice.
-3. Using a for loop to update Diana's major to "Programming". Iterate over the list and update the major for the student named Diana.
-4. Print the updated list of students. After making the updates, use a for loop to print each dictionary in the list to verify the changes.
-    Expected output:
-    students = [
-  	  {"name": "Alice", "age": 20, "grade": 87, "major": "Physics"},
-  	  {"name": "Bob", "age": 22, "grade": 90, "major": "Chemistry"},
-  	  {"name": "Charlie", "age": 19, "grade": 78, "major": "Mathematics"},
-  	  {"name": "Diana", "age": 21, "grade": 92, "major": "Programming"}
-    ]
+Assignment 8: Lists
+Objective: Understand how to create and manipulate lists in Python.
 
-**Homework 3:  Adding Dictionary Items in a List of Dictionaries**
-Objective: Practice adding items in dictionaries within a list.
-1. Using data from the homework 2.
-2. Add a new key "graduation_year" with a value to each student's dictionary. Assume all students are expected to graduate in 2024.
-3. Remove the key "age" from each student's dictionary.
-4. Print the updated list of students.
-    Expected Output:
-    {'name': 'Alice', 'grade': 85, 'major': 'Physics', 'graduation_year': 2024}
-    {'name': 'Bob', 'grade': 90, 'major': 'Chemistry', 'graduation_year': 2024}
-    {'name': 'Charlie', 'grade': 78, 'major': 'Mathematics', 'graduation_year': 2024}
-    {'name': 'Diana', 'grade': 92, 'major': 'Biology', 'graduation_year': 2024}
+    1.    Create a list named fruits containing “apple”, “banana”, “cherry”.
+    2.    Add “orange” to the list.
+    3.    Remove “banana” from the list.
+    4.    Sort the list in alphabetical order.
+    5.    Print the length of the list.
 
+Assignment 9: List Slicing
+Objective: Learn how to slice lists to access sublists.
+
+    1.    Create a list named letters containing the first 10 letters of the alphabet. Ex. [A, B, C, D, ... ]
+
+    2.    Slice the list to get the first 5 letters and print the result.
+    3.    Slice the list to get the last 5 letters and print the result.
+   4.    Reverse the list and print the result.
+
+Assignment 10: Dictionary Basics
+Objective: Learn how to create and use dictionaries in Python.
+
+    1.    Create a dictionary named student with keys: “name”, “age”, “grade”.
+    2.    Set the values of the dictionary to your name, age, and a grade of your choice.
+    3.    Print the dictionary.
+    4.    Add a new key-value pair: “school” with the value of your school name.
+    5.    Remove the key “grade” from the dictionary and print the updated dictionary.
