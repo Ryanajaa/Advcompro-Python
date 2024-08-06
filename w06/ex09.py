@@ -1,14 +1,13 @@
 '''
-### Assignment 5: Raising and Handling Custom Exceptions
-**Required Knowledge**: Custom Exceptions, Raising Exceptions
+### Assignment 9: Adding a Diagnosticss Method
+**Required Knowledge**: Class Methods
 **Instructions**:
-1. Create a custom exception named `OverSpeedError`.
-2. Add an attribute `speed` to the `Car` class.
-3. Implement a method named `accelerate` that raises `OverSpeedError` if the car's speed exceeds 120.
-4. Test this by calling `accelerate` and catching the `OverSpeedError` to print a warning message.
+1. Extend the `Car` class by adding a method named `diagnosticss` that prints various status information such as `fuel_level` and `speed`.
+2. Test this method by creating an instance of the `Car` class and calling `diagnosticss` to print the car's status.
+3. Call `diagnosticss` in a while loop in the main program to print every second. (Hint: use `time.sleep(1)` to delay).
 '''
+import time
 
-# Custom exception
 class OverSpeedError(Exception):
 	def __init__(self, message="Speed limit exceeded!"):
 		self.message = message
@@ -37,6 +36,19 @@ class Car:
 		except ValueError as e:
 			print(f"Error: {e}")
 
+	def check_fuel(self):
+		if self.fuel_level < 5:
+			raise ValueError(f"Fuel level is too low ({self.fuel_level}). Please refuel.")
+
+	def drive(self, distance):
+		fuel_consumption = distance * 0.2
+		self.fuel_level -= fuel_consumption
+		try:
+			self.check_fuel()
+			print(f"Drove {distance} km. Fuel level: {self.fuel_level} units.")
+		except ValueError as e:
+			print(f"Error: {e}")
+
 	def accelerate(self, increase_speed):
 		self.speed += increase_speed
 		try:
@@ -45,11 +57,17 @@ class Car:
 			print(f"Accelerated to {self.speed} km/h.")
 		except OverSpeedError as e:
 			print(f"Error: {e}")
+	
+	def diagnostics(self):
+		print("-------------------------------")
+		print(f"fuel_level: {self.fuel_level} unit\nspeed     : {self.speed} km/h")
 
 # Test the method
 car1 = Car("Toyota", "Camry", fuel_level=10, speed=100)
 car1.print_car_info()
 car1.start_engine()
-car1.accelerate(15)
-car1.accelerate(10)
-car1.accelerate(10)
+car1.diagnostics()
+
+while True:
+    car1.diagnostics()
+    time.sleep(1)

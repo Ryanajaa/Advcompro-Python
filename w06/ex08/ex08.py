@@ -29,11 +29,18 @@ class Car:
 		except AttributeError as e:
 			print(f"Error: {e}")
 
+	def main_read(self, file_path):
+		with open(file_path, 'r') as file:
+			self.color = file.read().strip()
+			if self.color == "" or self.color == None:
+				raise ValueError("No color")
+			else:
+				print(f"Car color read from file: {self.color}")
+		return(f"the color is {self.color}")
+
 	def read_color_from_file(self, file_path):
 		try:
-			with open(file_path, 'r') as file:
-				self.color = file.read().strip()
-				print(f"Car color read from file: {self.color}")
+			self.main_read(file_path)
 		except FileNotFoundError:
 			print(f"Error: The file {file_path} was not found.")
 		except ValueError as ve:
@@ -42,7 +49,7 @@ class Car:
 			print(f"Error: {e}")
 
 # Test the method
-car1 = Car("Toyota", "Camry", fuel_level=10, speed=100)
+car1 = Car("Toyota", "Camry")
 # Reading color from file
 car1.read_color_from_file('color.txt')
 car1.print_car_info()
