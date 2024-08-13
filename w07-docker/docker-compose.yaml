@@ -4,8 +4,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: temp
-      POSTGRES_PASSWORD: temp
+      POSTGRES_USER: tmp
+      POSTGRES_PASSWORD: tmp
       POSTGRES_DB: advcompro
     volumes:
       - postgres_data:/var/lib/postgresql/data
