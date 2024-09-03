@@ -35,13 +35,13 @@ class Person:
 		print(f"Phone Number: {self.phone_number}")
 	
 class Student(Person):
-    def __init__(self, name, age, student_id, address=None, phone_number=None):
-        super().__init__(name, age, address, phone_number)
-        self.student_id = student_id
-    
-    def display_info(self):
-        super().display_info()
-        print(f"Student ID: {self.student_id}")
+	def __init__(self, name, age, student_id, address=None, phone_number=None):
+		super().__init__(name, age, address, phone_number)
+		self.student_id = student_id
+	
+	def display_info(self):
+		super().display_info()
+		print(f"Student ID: {self.student_id}")
 
 student = Student("Ryanaja", "19", "66011009", "BKK", "11-009")
 student.display_info()

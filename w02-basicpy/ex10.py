@@ -5,9 +5,9 @@ Objective: Learn how to create and use dictionaries in Python.
 
 #1.	Create a dictionary named student with keys: “name”, “age”, “grade”.
 student = {
-    "name": str(), 
-    "age": int(),
-    "grade": int()
+	"name": str(), 
+	"age": int(),
+	"grade": int()
 }
 
 #2.	Set the values of the dictionary to your name, age, and a grade of your choice.
