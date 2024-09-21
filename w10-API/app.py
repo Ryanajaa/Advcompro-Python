@@ -3,8 +3,13 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 from database import *
+from typing import Union
 
 app = FastAPI()
+
+@app.get("/")
+def read_root():
+	return {"Hello": "World"}
 
 # Pydantic model for user creation
 class UserCreate(BaseModel):

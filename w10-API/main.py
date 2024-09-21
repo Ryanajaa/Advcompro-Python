@@ -76,10 +76,10 @@ async def delete_user(user_id):
 # Main function to run the async functions
 async def main():
 	await connect_db() # Connect to the database
-	await select_data() #add function sql : select
-	await insert_user('TA2', '1234','TA2@kmitl.ac.th') # Insert a sample User
-	await update_user(1, username='TA', password_hash='123',email='TA1@kmitl.ac.th') # Update a specific item
-	await delete_user(2) # Delete a specific item by ID
+	# await select_data() #add function sql : select
+	# await insert_user('TA2', '1234','TA2@kmitl.ac.th') # Insert a sample User
+	# await update_user(1, username='TA', password_hash='123',email='TA1@kmitl.ac.th') # Update a specific item
+	# await delete_user(2) # Delete a specific item by ID
 	await disconnect_db() # Disconnect from the database
 
 if __name__ == "__main__":
